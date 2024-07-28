@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>AKdeMy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="images/logo.png"/>
+    <style>
+        .small-image {
+            width: 150px; /* Ajusta este tamaño según tus necesidades */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+        .large-image {
+            width: 100%;
+            max-width: 500px; /* Ajusta el tamaño máximo según tus necesidades */
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.25s ease, top 0.25s ease, left 0.25s ease;
+            position: relative;
+        }
+        .large-image.zoomed {
+            transform: scale(2); /* Ajusta la escala según tus necesidades */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(2);
+            z-index: 1000;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            cursor: zoom-out;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <section>
+                    <header class="major">
+                        <h2>FORMULARIOS</h2>
+                    </header>
+                    <header class="major">
+                        <h3>FORMULAS MATEMATICAS</h3>
+                    </header>
+                    <div class="posts">
+                        <article>
+                            <div class="image-container">
+                                <img src="images/Formulas1/AreasYPerimetros.jpg" alt="Descripción de la nueva imagen" class="large-image" onclick="toggleZoom(this)" />
+                                <a href="images/Formulas1/AreasYPerimetros.jpg" target="_blank">Abrir en otra ventana</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>CONTENIDO</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="esenciales.html">ESENCIALES COMPLETOS Y SOLUCIONADOS</a></li>
+                        <li>
+                            <span class="opener">ESENCIALES</span>
+                            <ul>
+                                <li>Trigonometria</li>
+                                <li>Quimica</li>
+                                <li>Algebra</li>
+                                <li>Biologia</li>
+                            </ul>
+                            <span class="opener">SOLUCIONADOS</span>
+                            <ul>
+                                <li>Geometria</li>
+                                <li>Algebra</li>
+                                <li>Quimica</li>
+                                <li>Aritmetica</li>
+                                <li>Trigonometria</li>
+                                <li>Fisica</li>
+                            </ul>
+                        </li>
+                        <li><a href="selectos.html">LIBROS SELECTOS</a></li>
+                        <li>
+                            <span class="opener">Cursos</span>
+                            <ul>
+                                <li>Aritmetica</li>
+                                <li>Algebra</li>
+                                <li>Economia</li>
+                                <li>Filosofia</li>
+                                <li>Geografia</li>
+                                <li>Historia</li>
+                                <li>Psicologia</li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Formulas</span>
+                            <ul>
+                                <li><a href="#">Areas</a></li>
+                                <li><a href="#">Productos Notables</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Milagros Katherine -  Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleZoom(img) {
+            img.classList.toggle("zoomed");
+        }
+    </script>
+
+</body>
+</html>
