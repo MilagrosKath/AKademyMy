@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $attachment = chunk_split(base64_encode(file_get_contents($tmp_name)));
 
         $boundary = md5(time());
-        $headers = "From: no-reply@yourdomain.com\r\n";
+        $headers = "From: milagrossoto54@gmail.com\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
 
