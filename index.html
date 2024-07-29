@@ -39,6 +39,17 @@
 			#menu .opener ul li a:hover {
 				background: #444;
 			}
+
+			.text-link {
+				color: #000; /* Color negro */
+				font-size: 16px; /* Tamaño de la fuente */
+				text-decoration: none; /* Quita el subrayado del enlace */
+				font-weight: bold; /* Texto en negrita */
+			}
+			.text-link:hover {
+				color: #333; /* Color gris oscuro al pasar el mouse (opcional) */
+			}
+
 		</style>
 
 
@@ -54,10 +65,11 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>AKadeMy</strong> LIBRERIA VIRTUAL </a>
+									<a href="https://ichvirtual.edu.pe/ich-intranetalumnos/public/index.php" class="logo"><strong>AKadeMy</strong> LIBRERIA VIRTUAL </a>
 									<ul class="icons">
-										<li><a href="https://ichvirtual.edu.pe/ich-intranetalumnos/public/index.php" class="icon brands fa-twitter"><span class="label">Intranet Aduni</span></a></li>
+										<li><a href="#" class="text-link"><span class="label">INTRANET ADUNI </span></a></li>
 									</ul>
+									
 								</header>
 
 							<!-- Banner -->
@@ -117,11 +129,13 @@
 						<div class="inner">
 
 							<!-- Search -->
+								<!-- Sección de búsqueda en el HTML principal 
 								<section id="search" class="alt">
-									<form method="post" action="#">
+									<form method="get" action="search_results.html">
 										<input type="text" name="query" id="query" placeholder="Search" />
+										<button type="submit">Buscar</button>
 									</form>
-								</section>
+								</section>-->
 
 							<!-- Menu -->
 								<nav id="menu">
