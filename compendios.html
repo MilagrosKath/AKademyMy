@@ -11,34 +11,6 @@
             width: 150px; /* Ajusta este tamaño según tus necesidades */
             height: auto; /* Mantiene la proporción de la imagen */
         }
-        .large-image {
-            width: 100%;
-            max-width: 500px; /* Ajusta el tamaño máximo según tus necesidades */
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.25s ease, top 0.25s ease, left 0.25s ease;
-            position: relative;
-        }
-        .large-image.zoomed {
-            transform: scale(2); /* Ajusta la escala según tus necesidades */
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(2);
-            z-index: 1000;
-        }
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            cursor: zoom-out;
-        }
 
         /* Estilos para el menú desplegable al pasar el mouse */
 			#menu .opener {
@@ -80,22 +52,26 @@
         <div id="main">
             <div class="inner">
 
+                <!-- Section -->
                 <section>
                     <header class="major">
-                        <h2>FORMULARIOS</h2>
-                    </header>
-                    <header class="major">
-                        <h3>FORMULAS MATEMATICAS</h3>
+                        <h2>COMPENDIOS</h2>
                     </header>
                     <div class="posts">
                         <article>
-                            <div class="image-container">
-                                <img src="images/Formulas1/AreasYPerimetros.jpg" alt="Descripción de la nueva imagen" class="large-image" onclick="toggleZoom(this)" />
-                                <a href="images/Formulas1/AreasYPerimetros.jpg" target="_blank">Abrir en otra ventana</a>
-                            </div>
+                            <a href="#"><img src="images/pic02.jpg" alt="" class="small-image" /></a>
+                            <h3>BBIOLOGIA</h3>
+                            <ul class="actions">
+                                <li><a href="https://drive.google.com/file/d/1RXdmfWo0-R29Yu1O81EOBPgNSf649p0T/view?usp=sharing" class="button" target="_blank">VER LIBRO</a></li>
+                            </ul>
                         </article>
+                        
                     </div>
+                    
                 </section>
+
+               
+            </div>
 
             </div>
         </div>
@@ -152,7 +128,7 @@
                                 <li><a href="#">Psicologia</a></li>
                             </ul>											
                         </li>
-                        <!--
+
                         <li class="opener">
                             <a href="compendios.html">COMPENDIOS</a>
                             <ul>
@@ -164,7 +140,7 @@
                                 <li><a href="#">Economia y Ed,. Civica</a></li>
                                 <li><a href="#">Geografia</a></li>
                             </ul>										
-                        </li>-->
+                        </li>
 
                         <li class="opener">
                             <a href="formulas.html">FORMULAS</a>
@@ -193,11 +169,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        function toggleZoom(img) {
-            img.classList.toggle("zoomed");
-        }
-    </script>
 
 </body>
 </html>

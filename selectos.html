@@ -11,6 +11,37 @@
             width: 150px; /* Ajusta este tamaño según tus necesidades */
             height: auto; /* Mantiene la proporción de la imagen */
         }
+
+        /* Estilos para el menú desplegable al pasar el mouse */
+			#menu .opener {
+				position: relative;
+			}
+			#menu .opener ul {
+				display: none;
+				position: absolute;
+				background: #333;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				z-index: 1000;
+				width: 200px; /* Ajusta el ancho según tus necesidades */
+			}
+			#menu .opener:hover ul {
+				display: block;
+			}
+			#menu .opener ul li {
+				width: 100%;
+				text-align: left;
+			}
+			#menu .opener ul li a {
+				display: block;
+				padding: 10px;
+				color: white;
+				text-decoration: none;
+			}
+			#menu .opener ul li a:hover {
+				background: #444;
+			}
     </style>
 </head>
 <body class="is-preload">
@@ -188,46 +219,62 @@
                     </header>
                     <ul>
                         <li><a href="index.html">INICIO</a></li>
-                        <li><a href="esenciales.html">ESENCIALES COMPLETOS Y SOLUCIONADOS</a></li>
-                        <li>
-                            <span class="opener">ESENCIALES</span>
-                            <ul>
-                                <li>Trigonometria</li>
-                                <li>Quimica</li>
-                                <li>Algebra</li>
-                                <li>Biologia</li>
-                            </ul>
-                            <span class="opener">SOLUCIONADOS</span>
-                            <ul>
-                                <li>Geometria</li>
-                                <li>Algebra</li>
-                                <li>Quimica</li>
-                                <li>Aritmetica</li>
-                                <li>Trigonometria</li>
-                                <li>Fisica</li>
-                            </ul>
-                        </li>
-                        <li><a href="selectos.html">LIBROS SELECTOS</a></li>
-                        <li>
-                            <span class="opener">Cursos</span>
-                            <ul>
-                                <li>Aritmetica</li>
-                                <li>Algebra</li>
-                                <li>Economia</li>
-                                <li>Filosofia</li>
-                                <li>Geografia</li>
-                                <li>Historia</li>
-                                <li>Psicologia</li>
 
-                            </ul>
+                        <li class="opener">
+                            <a href="esenciales.html">ESENCIALES</a>
+                            <ul>
+                                <li><a href="#">Trigonometría</a></li>
+                                <li><a href="#">Química</a></li>
+                                <li><a href="#">Álgebra</a></li>
+                                <li><a href="#">Biología</a></li>
+                            </ul>											
                         </li>
-                        <li>
-                            <span class="opener">Formulas</span>
+
+                        <li class="opener">
+                            <a href="esenciales.html"> ESENCIALES SOLUCIONADOS</a>
+                            <ul>
+                                <li><a href="#">Geometria</a></li>
+                                <li><a href="#">Algebra</a></li>
+                                <li><a href="#">Quimica</a></li>
+                                <li><a href="#">Aritmetica</a></li>
+                                <li><a href="#">Trigonometria</a></li>
+                                <li><a href="#">Fisica</a></li>
+                            </ul>											
+                        </li>
+
+                        <li class="opener">
+                            <a href="selectos.html">LIBROS SELECTOS</a>
+                            <ul>
+                                <li><a href="#">Economia</a></li>
+                                <li><a href="#">Filosofia</a></li>
+                                <li><a href="#">>Geografia</a></li>
+                                <li><a href="#">Historia</a></li>
+                                <li><a href="#">Logica</a></li>
+                                <li><a href="#">Psicologia</a></li>
+                            </ul>											
+                        </li>
+                        <!--
+                        <li class="opener">
+                            <a href="compendios.html">COMPENDIOS</a>
+                            <ul>
+                                <li><a href="#">Biologia</a></li>
+                                <li><a href="#">Razonamiento Verbal</a></li>
+                                <li><a href="#">Historia del Peru</a></li>
+                                <li><a href="#">Historia universal</a></li>
+                                <li><a href="#">Psicologia</a></li>
+                                <li><a href="#">Economia y Ed,. Civica</a></li>
+                                <li><a href="#">Geografia</a></li>
+                            </ul>										
+                        </li>-->
+
+                        <li class="opener">
+                            <a href="formulas.html">FORMULAS</a>
                             <ul>
                                 <li><a href="#">Areas</a></li>
                                 <li><a href="#">Productos Notables</a></li>
-                            </ul>
+                            </ul>									
                         </li>
+
                     </ul>
                 </nav>
 
